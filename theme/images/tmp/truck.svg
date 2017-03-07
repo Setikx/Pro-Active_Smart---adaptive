@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 770 168" style="enable-background:new 0 0 770 168;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D0D2D3;}
+	.st1{clip-path:url(#SVGID_2_);fill:#D0D2D3;}
+	.st2{clip-path:url(#SVGID_4_);fill:#D0D2D3;}
+	.st3{fill:#FFB080;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#FF6400;}
+</style>
+<g>
+	<rect x="290" y="12" class="st0" width="320" height="120"/>
+	<rect x="418" class="st0" width="64" height="13"/>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="770" height="168"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st1" d="M706,64c0-35.3-28.7-52-64-52v52l64,12"/>
+	</g>
+	<rect x="642" y="48" class="st0" width="96" height="24"/>
+	<polygon class="st0" points="642,132 770,132 770,84 706,61 642,60 	"/>
+	<rect x="322" y="120" class="st0" width="448" height="24"/>
+	<rect x="2" y="120" class="st0" width="256" height="24"/>
+	<g>
+		<defs>
+			<rect id="SVGID_3_" width="770" height="168"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st2" d="M386,168c17.7,0,32-14.3,32-32s-14.3-32-32-32c-17.7,0-32,14.3-32,32S368.3,168,386,168"/>
+		<path class="st2" d="M66,168c17.7,0,32-14.3,32-32s-14.3-32-32-32s-32,14.3-32,32S48.3,168,66,168"/>
+		<path class="st2" d="M130,168c17.7,0,32-14.3,32-32s-14.3-32-32-32s-32,14.3-32,32S112.3,168,130,168"/>
+		<path class="st2" d="M450,168c17.7,0,32-14.3,32-32s-14.3-32-32-32c-17.7,0-32,14.3-32,32S432.3,168,450,168"/>
+		<path class="st2" d="M577,168c17.7,0,32-14.3,32-32s-14.3-32-32-32c-17.7,0-32,14.3-32,32S559.3,168,577,168"/>
+		<path class="st2" d="M706,168c17.7,0,32-14.3,32-32s-14.3-32-32-32c-17.7,0-32,14.3-32,32S688.3,168,706,168"/>
+	</g>
+	<rect x="302" y="24" class="st3" width="296" height="96"/>
+	<rect x="302" y="24" class="st4" width="296" height="12"/>
+	<rect x="2" y="96" class="st4" width="256" height="24"/>
+	<rect x="192" y="24" class="st0" width="2" height="6"/>
+	<rect x="192" y="102" class="st0" width="2" height="6"/>
+	<rect x="194" y="24" class="st0" width="64" height="84"/>
+	<rect x="258" y="24" class="st0" width="2" height="6"/>
+	<rect x="258" y="102" class="st0" width="2" height="6"/>
+	<rect x="206" y="36" class="st5" width="40" height="60"/>
+	<rect x="206" y="36" class="st4" width="40" height="12"/>
+	<rect x="96" y="24" class="st0" width="2" height="6"/>
+	<rect x="96" y="102" class="st0" width="2" height="6"/>
+	<rect x="98" y="24" class="st0" width="64" height="84"/>
+	<rect x="162" y="24" class="st0" width="2" height="6"/>
+	<rect x="162" y="102" class="st0" width="2" height="6"/>
+	<rect x="110" y="36" class="st5" width="40" height="60"/>
+	<rect x="110" y="36" class="st4" width="40" height="12"/>
+	<rect y="24" class="st0" width="2" height="6"/>
+	<rect y="102" class="st0" width="2" height="6"/>
+	<rect x="2" y="24" class="st0" width="64" height="84"/>
+	<rect x="66" y="24" class="st0" width="2" height="6"/>
+	<rect x="66" y="102" class="st0" width="2" height="6"/>
+	<rect x="14" y="36" class="st5" width="40" height="60"/>
+	<rect x="14" y="36" class="st4" width="40" height="12"/>
+</g>
+</svg>

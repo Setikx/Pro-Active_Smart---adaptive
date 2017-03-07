@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 764 384" style="enable-background:new 0 0 764 384;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#D0D2D3;}
+	.st1{fill:#D0D2D3;}
+	.st2{clip-path:url(#SVGID_4_);fill:#D0D2D3;}
+	.st3{clip-path:url(#SVGID_6_);fill:#D0D2D3;}
+	.st4{clip-path:url(#SVGID_8_);fill:#D0D2D3;}
+	.st5{clip-path:url(#SVGID_10_);fill:#D0D2D3;}
+</style>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="764" height="384"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st0" d="M719,84c3.3,0,6-2.7,6-6c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6C713,81.3,715.7,84,719,84"/>
+	</g>
+	<rect x="713" y="86" class="st1" width="12" height="22"/>
+	<rect x="713" y="86" class="st1" width="12" height="22"/>
+	<polygon class="st1" points="713,108 713,132 718,132 719,108 	"/>
+	<polygon class="st1" points="719,108 720,132 725,132 725,108 	"/>
+	<polygon class="st1" points="713,108 713,132 718,132 719,108 	"/>
+	<polygon class="st1" points="713,86 705,109 708,110 717,86 	"/>
+	<polygon class="st1" points="725,86 733,109 730,110 721,86 	"/>
+	<g>
+		<defs>
+			<rect id="SVGID_3_" width="764" height="384"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st2" d="M205,12c3.3,0,6-2.7,6-6c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6C199,9.3,201.7,12,205,12"/>
+	</g>
+	<rect x="199" y="14" class="st1" width="12" height="22"/>
+	<rect x="199" y="14" class="st1" width="12" height="22"/>
+	<polygon class="st1" points="199,36 199,60 204,60 205,36 	"/>
+	<polygon class="st1" points="205,36 206,60 211,60 211,36 	"/>
+	<polygon class="st1" points="199,36 199,60 204,60 205,36 	"/>
+	<polygon class="st1" points="199,14 191,37 194,38 203,14 	"/>
+	<polygon class="st1" points="211,14 219,37 216,38 207,14 	"/>
+	<g>
+		<defs>
+			<rect id="SVGID_5_" width="764" height="384"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st3" d="M750,228c3.3,0,6-2.7,6-6c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6C744,225.3,746.7,228,750,228"/>
+	</g>
+	<rect x="744" y="230" class="st1" width="12" height="22"/>
+	<rect x="744" y="230" class="st1" width="12" height="22"/>
+	<polygon class="st1" points="744,252 744,276 749,276 750,252 	"/>
+	<polygon class="st1" points="750,252 751,276 756,276 756,252 	"/>
+	<polygon class="st1" points="744,252 744,276 749,276 750,252 	"/>
+	<polygon class="st1" points="744,230 736,253 739,254 748,230 	"/>
+	<polygon class="st1" points="752,230 761,254 764,253 756,230 	"/>
+	<g>
+		<defs>
+			<rect id="SVGID_7_" width="764" height="384"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st4" d="M430,336c3.3,0,6-2.7,6-6s-2.7-6-6-6c-3.3,0-6,2.7-6,6S426.7,336,430,336"/>
+	</g>
+	<rect x="424" y="338" class="st1" width="12" height="22"/>
+	<rect x="424" y="338" class="st1" width="12" height="22"/>
+	<polygon class="st1" points="424,360 424,384 429,384 430,360 	"/>
+	<polygon class="st1" points="430,360 431,384 436,384 436,360 	"/>
+	<polygon class="st1" points="424,360 424,384 429,384 430,360 	"/>
+	<polygon class="st1" points="424,338 416,361 419,362 428,338 	"/>
+	<polygon class="st1" points="436,338 444,361 441,362 432,338 	"/>
+	<g>
+		<defs>
+			<rect id="SVGID_9_" width="764" height="384"/>
+		</defs>
+		<clipPath id="SVGID_10_">
+			<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st5" d="M14,156c3.3,0,6-2.7,6-6c0-3.3-2.7-6-6-6s-6,2.7-6,6C8,153.3,10.7,156,14,156"/>
+	</g>
+	<rect x="8" y="158" class="st1" width="12" height="22"/>
+	<rect x="8" y="158" class="st1" width="12" height="22"/>
+	<polygon class="st1" points="8,180 8,204 13,204 14,180 	"/>
+	<polygon class="st1" points="14,180 15,204 20,204 20,180 	"/>
+	<polygon class="st1" points="8,180 8,204 13,204 14,180 	"/>
+	<polygon class="st1" points="8,158 0,181 3,182 12,158 	"/>
+	<polygon class="st1" points="20,158 28,181 25,182 16,158 	"/>
+</g>
+</svg>
