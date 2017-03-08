@@ -76,17 +76,17 @@ html.fp-enabled,
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  @include transform (scale(.6));
+
 }
 .fp-controlArrow.fp-prev {
-  left: -10px;
   width: 0;
   border-width: 38.5px 34px 38.5px 0;
   border-color: transparent #fff transparent transparent;
+  left: 10px;
 
 }
 .fp-controlArrow.fp-next {
-  right: -10px;
+  right: 10px;
   border-width: 38.5px 0 38.5px 34px;
   border-color: transparent transparent transparent #fff;
 }

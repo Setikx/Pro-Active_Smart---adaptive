@@ -4631,7 +4631,7 @@ html[xmlns] .flexslider .slides {
   border: 0;
   width: 96px;
   height: 96px;
-
+  @include transform (scale(.6));
 
 }
 .fp-controlArrow.fp-prev {
@@ -4643,6 +4643,8 @@ html[xmlns] .flexslider .slides {
   opacity:0;
   transition:0.7s;
 }
+
+
 li.sug {
   position:relative;
   height:45px;
