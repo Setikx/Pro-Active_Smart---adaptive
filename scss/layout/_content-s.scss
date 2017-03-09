@@ -269,21 +269,34 @@ input {
   outline: none
 }
 aside {
-  width: 96px;
+  width: 0px;
   height: 100vh;
   position: fixed;
   background-color: #e61e28;
-  z-index: 10
+  z-index: 10;
+
 }
+
+.aside_is-active {
+  width: 96px;
+  transition: width .5s;
+}
+
+
 .wrapper {
-  //  min-width: 940px;
-  margin-left: 96px;
+  margin-left: 0;
   color: #000000;
   font-size: 16px;
   font-family: 'MuseoSansCyrl-300';
   position: relative;
-  overflow: hidden
+  overflow: hidden;
+  transition: margin-left .5s;
 }
+
+.aside_is-active--wrapper {
+  margin-left: 96px;
+}
+
 .flexslider {
   border: none
 }
@@ -4746,3 +4759,5 @@ li.slide-24.slide.s11 > div > div > div.content > div.essence {
 .fp-tableCell {
   height: 100%;
 }
+
+

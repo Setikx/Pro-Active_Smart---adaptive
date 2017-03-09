@@ -10,6 +10,8 @@ var eventFlag = false;
     redTextAnimcount();
     h2oAppear();
     redBoxOnScroll();
+    menuS();
+    fixedRemove();
 
 
     $(window).load(function () {
@@ -188,7 +190,35 @@ function redBoxOnScroll () {
 
     });
 }
+function menuS () {
+    $(document).ready(function () {
+        $(".hamburger").click(function () {
+            $(this).toggleClass("is-active");
+            $("aside").toggleClass("aside_is-active");
+            $("body > div.wrapper").toggleClass("aside_is-active--wrapper");
 
+        });
+    });
+}
+
+    function fixedRemove () {
+        $(document).ready(function () {
+            var $sizeS = $(screen).width("376");
+            var $sizeM = $(window).size("768", "1024");
+            var $fixHead = $("body > div.inner > div");
+            e();
+            function e() {
+                if ($(window) <= $sizeS) {
+                    $fixHead.removeClass("fixed-header");
+
+                }
+                else {
+
+                }
+            }
+        });
+    }
 
 
 })(jQuery);
+
