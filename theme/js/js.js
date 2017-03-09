@@ -3,7 +3,7 @@ var rightFlag = false;
 var leftFlag = false;
 var scrollFlag = true;
 var eventFlag = false;
-
+var $mobile = false;
 (function ($) {
     speechVisible();
     speechCrossClose();
@@ -11,95 +11,102 @@ var eventFlag = false;
     h2oAppear();
     redBoxOnScroll();
     menuS();
-    fixedRemove();
+	checkMobile();
 
 
+	$(window).on("resize",function(){
+		checkMobile();
+	})
     $(window).load(function () {
-		$(".flexslider").fullpage({
-			anchors: [
-				'project'
-			],
-			slidesNavigation: true,
-			scrollingSpeed: 700,
-			fitToSection: true,
-			fixedElements:".fixed-header",
-			scrollBar: true,
-			onLeave:function(index, nextIndex, direction){
-				console.log(index, nextIndex, direction);
-			},
-			onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-				console.log(anchorLink, index, slideIndex, direction, nextSlideIndex);
-				$(".slide.s"+slideIndex).removeClass("mousewheel");
-				curSlide = nextSlideIndex;
-				if (curSlide == 3 || curSlide == 4 || curSlide == 5 || curSlide == 6 || curSlide == 7 || curSlide == 8 || curSlide == 9 || curSlide == 10 || curSlide == 11) {
-					scrollFlag = false;
-					setTimeout(function(){
-						eventFlag = true;
-					},1000)
+		if (!$mobile) {
+			$(".flexslider").fullpage({
+				anchors: [
+					'project'
+				],
+				slidesNavigation: true,
+				scrollingSpeed: 700,
+				fitToSection: true,
+				responsiveWidth: 400,
+				responsiveHeight: 700,
+				fixedElements:".fixed-header",
+				scrollBar: true,
+				onLeave:function(index, nextIndex, direction){
+					console.log(index, nextIndex, direction);
+				},
+				onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+					console.log(anchorLink, index, slideIndex, direction, nextSlideIndex);
+					$(".slide.s"+slideIndex).removeClass("mousewheel");
+					curSlide = nextSlideIndex;
+					if (curSlide == 3 || curSlide == 4 || curSlide == 5 || curSlide == 6 || curSlide == 7 || curSlide == 8 || curSlide == 9 || curSlide == 10 || curSlide == 11) {
+						scrollFlag = false;
+						setTimeout(function(){
+							eventFlag = true;
+						},1000)
+					}
+				},
+				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+					console.log(anchorLink, index, slideAnchor, slideIndex);
+					curSlide = slideIndex;
+					if (curSlide == 0) {
+						rightFlag = false;
+						leftFlag = false;
+					} else {
+						rightFlag = true;
+						leftFlag = true;					
+					}
 				}
-			},
-			afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-				console.log(anchorLink, index, slideAnchor, slideIndex);
-				curSlide = slideIndex;
-				if (curSlide == 0) {
-					rightFlag = false;
-					leftFlag = false;
-				} else {
-					rightFlag = true;
-					leftFlag = true;					
-				}
-			}
-		})
-		$(".footer a").on("click",function(){
-			$(".slide.s"+curSlide).addClass("mousewheel");
-			eventFlag = false;
-			setTimeout(function(){
-				scrollFlag = true;
-			},1000)
-		})
-		$(".footer p.title").on("click",function(){
-			$(".slide.s"+curSlide).addClass("mousewheel");
-			eventFlag = false;
-			setTimeout(function(){
-				scrollFlag = true;
-			},1000)
-		})
-		$(window).on("mousewheel",function(event){
-			if (eventFlag) {
+			})
+			$(".footer a").on("click",function(){
 				$(".slide.s"+curSlide).addClass("mousewheel");
 				eventFlag = false;
 				setTimeout(function(){
 					scrollFlag = true;
 				},1000)
-			}
-			if (scrollFlag) {
-				if (event.deltaY > 0) {
-					if (leftFlag) {
-						$.fn.fullpage.moveSlideLeft();
-					}
-				} else {
-					if (rightFlag) {
-						$.fn.fullpage.moveSlideRight();
-					}
+			})
+			$(".footer p.title").on("click",function(){
+				$(".slide.s"+curSlide).addClass("mousewheel");
+				eventFlag = false;
+				setTimeout(function(){
+					scrollFlag = true;
+				},1000)
+			})
+			$(window).on("mousewheel",function(event){
+				if (eventFlag) {
+					$(".slide.s"+curSlide).addClass("mousewheel");
+					eventFlag = false;
+					setTimeout(function(){
+						scrollFlag = true;
+					},1000)
 				}
-				if (curSlide == 0) {
-					var $redBox = $('li.slide-1 div.speech-bubble');
-					scrollFlag = false;
-					if (event.deltaY < 0) {
-						$redBox.animate({scrollTop:300},500,'linear',function(){
-							rightFlag = true;
-							scrollFlag = true;
-						});
+				if (scrollFlag) {
+					if (event.deltaY > 0) {
+						if (leftFlag) {
+							$.fn.fullpage.moveSlideLeft();
+						}
 					} else {
-						$redBox.animate({scrollTop:0},500,'linear',function(){
-							scrollFlag = true;
-						});
+						if (rightFlag) {
+							$.fn.fullpage.moveSlideRight();
+						}
 					}
-				} 
-			}
-		})
-		
+					if (curSlide == 0) {
+						var $redBox = $('li.slide-1 div.speech-bubble');
+						scrollFlag = false;
+						if (event.deltaY < 0) {
+							$redBox.animate({scrollTop:300},500,'linear',function(){
+								rightFlag = true;
+								scrollFlag = true;
+							});
+						} else {
+							$redBox.animate({scrollTop:0},500,'linear',function(){
+								scrollFlag = true;
+							});
+						}
+					} 
+				}
+			})
+		}
     });
+
 
 
 function speechVisible () {
@@ -120,6 +127,25 @@ function speechVisible () {
         });
     });
 }
+
+    function animClick () {
+        $(document).ready(function () {
+            var $eco = $('.footer a');
+            $eco.on('click', function () {
+                var label = $(this).data("id");
+                $(this).parent().next().find("."+label)
+                    .addClass("small-speech-fadeIn")
+                    .addClass("animated")
+                    .removeClass("small-speech-fadeOut");
+                $('.slide div.small-speech')
+                    .addClass("small-speech-fadeIn")
+                    .addClass("animated")
+                    .removeClass("small-speech-fadeOut");
+
+
+            });
+        });
+    }
 
     function speechCrossClose () {
         $(document).ready(function () {
@@ -167,7 +193,11 @@ function speechVisible () {
         });
 
     }
-
+function checkMobile() {
+	if ($(window).width()<768) {
+		$mobile = true;
+	}
+}
 function redBoxOnScroll () {
     $(window).ready(function () {
         var $redBox = $('body > div > div > ul.slides > li.slide-1 > div > div > div > div > div.speech-bubble'),
@@ -195,29 +225,9 @@ function menuS () {
         $(".hamburger").click(function () {
             $(this).toggleClass("is-active");
             $("aside").toggleClass("aside_is-active");
-            $("body > div.wrapper").toggleClass("aside_is-active--wrapper");
-
         });
     });
 }
-
-    function fixedRemove () {
-        $(document).ready(function () {
-            var $sizeS = $(screen).width("376");
-            var $sizeM = $(window).size("768", "1024");
-            var $fixHead = $("body > div.inner > div");
-            e();
-            function e() {
-                if ($(window) <= $sizeS) {
-                    $fixHead.removeClass("fixed-header");
-
-                }
-                else {
-
-                }
-            }
-        });
-    }
 
 
 })(jQuery);
